@@ -1,3 +1,5 @@
+#Thanks Adrian from pyImageSearch.com for such a good tutorial.
+
 #import the necessary packages
 import numpy as np
 import argparse
