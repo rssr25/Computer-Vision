@@ -1,0 +1,7 @@
+1. Detect the exam in an image
+2. Apply a perspective transform tpo extract the top-doen, birds-eyes view of the exam
+3. Extract the set of bubbles (positive answer choices) from the perspective transformed exam
+4. Sort the questions/bubbles into rows
+5. Determine the marked answer for each row.
+6. Lookup the correct answer in our answer key to determine if the user was correct in their choice
+7. Repeat for all questions in the exam.
