@@ -8,7 +8,7 @@ import time
 
 #construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("--v", "--video", help="path to the (optional) video file")
+ap.add_argument("-v", "--video", help="path to the (optional) video file")
 ap.add_argument("-b", "--buffer", type=int, default = 64, help = "max buffer size")
 args = vars(ap.parse_args())
 
@@ -21,10 +21,12 @@ pts = deque(maxlen = args["buffer"])
 
 #if a video path was not supplied, grab the reference to the webcam
 if not args.get("video", False):
+	print "no video file"
 	vs = VideoStream(src=0).start()
 
 #otherwise, grab a reference to the video file
 else:
+	print "yaas video"
 	vs = cv.VideoCapture(args["video"])
 
 #allow the camera or video file to warm up
