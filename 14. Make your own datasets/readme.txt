@@ -1,0 +1,1 @@
+In this code, we are using the Bing Image Search API to make our own datasets. 
