@@ -1,1 +1,1 @@
-Some projects done using python, oppencv and deep learning.
+Some projects done using python, opencv and deep learning.
